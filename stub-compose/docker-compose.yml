@@ -1,0 +1,12 @@
+name: stub
+
+services:
+
+  stub:
+    container_name: stub-case
+    image: whoisacat/stub:0.0.1-init
+    privileged: true
+    ports:
+      - "49999:49999"
+    environment:
+      - BACK_PORT=49999

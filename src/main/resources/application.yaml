@@ -1,5 +1,5 @@
 server:
-  port: 49999
+  port: ${BACK_PORT:49999}
 spring:
   application:
     name: demo
