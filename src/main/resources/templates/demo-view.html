@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Заголовок</title>
+    <style>
+        body {
+            font-family: Inter, sans-serif;
+            background: #fafafa;
+            padding: 40px;
+        }
+        .card {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 32px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 24px;
+        }
+        .footer {
+            margin-top: 40px;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="title" th:text="${title}"></div>
+    <div class="text" th:text="${bodyText}"></div>
+    <div class="text" th:text="${bodyText2}"></div>
+    <div class="footer" th:text="${footerText}"></div>
+</div>
+</body>
+</html>
